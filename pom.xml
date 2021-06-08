@@ -5,11 +5,18 @@
 
     <groupId>com.kkb.cubemall</groupId>
     <artifactId>cubemall</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>cubemall</name>
     <description>魔方商城</description>
     <modules>
         <module>cubemall-product</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>cubemall-common</module>
+        <module>cubemall-gateway</module>
+        <module>cubemall-third-party</module>
+
     </modules>
 
 

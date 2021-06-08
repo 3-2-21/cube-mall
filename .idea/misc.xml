@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/cubemall-product/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cubemall-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/cubemall-third-part/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -13,7 +15,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="9" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

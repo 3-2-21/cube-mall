@@ -1,13 +1,18 @@
 package com.kkb.cubemall.product;
 
-import org.junit.jupiter.api.Test;
+
+
+
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import java.io.FileNotFoundException;
 
 @SpringBootTest
-class CubemallProductApplicationTests {
+ class CubemallProductApplicationTests {
 
     @Test
-    void contextLoads() {
+    void test() throws FileNotFoundException {
+
     }
 
 }

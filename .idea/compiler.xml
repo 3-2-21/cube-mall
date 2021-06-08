@@ -2,22 +2,38 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="renren-generator" />
+        <module name="cubemall-common" />
         <module name="cubemall-product" />
-        <module name="cube-mall" />
+        <module name="renren-fast" />
+        <module name="cubemall-gateway" />
+        <module name="cubemall-third-part" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cube-mall" target="9.0" />
+      <module name="cubemall-common" target="9.0" />
+      <module name="cubemall-gateway" target="9.0" />
       <module name="cubemall-product" target="9.0" />
+      <module name="cubemall-third-part" target="9.0" />
+      <module name="cubemall-third-party" target="9.0" />
+      <module name="renren-fast" target="9.0" />
+      <module name="renren-generator" target="9.0" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cubemall-gateway" options="-parameters" />
       <module name="cubemall-product" options="-parameters" />
+      <module name="cubemall-third-part" options="-parameters" />
+      <module name="cubemall-third-party" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
     </option>
   </component>
 </project>
