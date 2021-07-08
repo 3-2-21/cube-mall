@@ -43,4 +43,11 @@ public class CubemallExceptionControllerAdvice {
         log.error("错误", throwable);
         return R.error(CubemallEnum.UNKNOW_EXCEPTION.getCode(), CubemallEnum.UNKNOW_EXCEPTION.getMsg()).put("data", "未知异常");
     }
+
+    @ExceptionHandler(value = RemoteServiceCallException.class)
+    public R handleVaildException(RemoteServiceCallException exception){
+        exception.printStackTrace();
+        return R.error(CubemallEnum.REMOTESERVICE_EXCEPTION.getCode(), exception.getMessage());
+    }
+
 }

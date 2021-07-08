@@ -10,6 +10,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class CubemallGatewayApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(CubemallGatewayApplication.class, args);
     }
 

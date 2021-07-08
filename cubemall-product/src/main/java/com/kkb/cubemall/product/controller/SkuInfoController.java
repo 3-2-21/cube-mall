@@ -5,12 +5,9 @@ import java.util.Map;
 
 import com.kkb.cubemall.common.utils.PageUtils;
 import com.kkb.cubemall.common.utils.R;
+import com.kkb.cubemall.product.vo.SpuSaveVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.kkb.cubemall.product.entity.SkuInfoEntity;
 import com.kkb.cubemall.product.service.SkuInfoService;
@@ -36,7 +33,7 @@ public class SkuInfoController {
     @RequestMapping("/list")
     //@RequiresPermissions("product:skuinfo:list")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = skuInfoService.queryPage(params);
+        PageUtils page = skuInfoService.queryPageByCondition(params);
 
         return R.ok().put("page", page);
     }
@@ -58,8 +55,8 @@ public class SkuInfoController {
      */
     @RequestMapping("/save")
     //@RequiresPermissions("product:skuinfo:save")
-    public R save(@RequestBody SkuInfoEntity skuInfo){
-		skuInfoService.save(skuInfo);
+    public R save(@RequestBody SkuInfoEntity skuInfoEntity){
+        skuInfoService.save(skuInfoEntity);
 
         return R.ok();
     }
@@ -85,5 +82,6 @@ public class SkuInfoController {
 
         return R.ok();
     }
+
 
 }

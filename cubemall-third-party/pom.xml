@@ -11,7 +11,7 @@
     <groupId>com.kkb.cubemall</groupId>
     <artifactId>cubemall-third-part</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cubemall-third-part</name>
+    <name>cubemall-third-party</name>
     <description>第三方服务</description>
     <properties>
         <java.version>1.8</java.version>

@@ -1,6 +1,6 @@
 package com.kkb.cubemall.product.vo;
 
-
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 @Data
@@ -46,4 +46,3 @@ public class AttrVo {
      */
     private Long attrGroupId;
 }
-

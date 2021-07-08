@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+     <div th:text="${hello}"></div>
+     <div th:utext="${html}"></div>
+<table border="1" bgcolor="#5f9ea0">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>address</th>
+        <th>birthday</th>
+    </tr>
+    <tr th:each="u:${userList}">
+        <td th:text="${u.id}">id</td>
+        <td th:text="${u.name}">name</td>
+        <td th:text="${u.address}">address</td>
+        <td th:text="${#dates.format(u.birthday,'yyy/MM/dd')}">birthday</td>
+    </tr>
+</table>
+     <div th:if="${flag}">flag为真时</div>
+     <div th:unless="${flag}">flag为假时</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.kkb.cubemall.thirdpart.controller;
+package com.kkb.cubemall.thirdparty.controller;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.common.utils.BinaryUtil;
@@ -26,11 +26,11 @@ public class OssController {
     private  String accessKey ; // 请填写您的AccessKeySecret。
     @Value("${spring.cloud.alicloud.oss.endpoint}")
     private String endpoint ; // 请填写您的 endpoint。
-    String bucket = "cubemall-q"; // 请填写您的 bucketname
+
 
     @RequestMapping("/oss/policy")
     public R policy() {
-
+        String bucket = "cubemall-q"; // 请填写您的 bucketname
         String host = "https://" + bucket + "." + endpoint; // host的格式为 bucketname.endpoint
         String format = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         String dir = format+"/"; // 用户上传文件时指定的前缀。
