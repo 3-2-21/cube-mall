@@ -7,8 +7,8 @@ spring:
     alicloud:
       oss:
         endpoint: oss-cn-beijing.aliyuncs.com
-      access-key: LTAI5tScF2h4wstSGTYYAzzv
-      secret-key: gBgu6nrBTuElKddBIAPe9aadz2DRdv
+      access-key: XXXXXX
+      secret-key: XXXXXX
   application:
     name: cubemall-third-party
 server:
